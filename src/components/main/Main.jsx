@@ -11,8 +11,8 @@ export const Main = () => {
                     </NavLink>
                 </div>
                 <div className={classes.button}>
-                    <NavLink to="/quiz/something">
-                        2. Something
+                    <NavLink to="/quiz/uib">
+                        2. УІБ
                     </NavLink>
                 </div>
             </div>
