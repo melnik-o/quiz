@@ -1,4 +1,4 @@
-export const questions = [
+export const questionsCryptoLaw = [
     {
         id: 1,
         question: 'Які параметри обираються в алгоритмі RSA?',

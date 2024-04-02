@@ -1,7 +1,8 @@
 import {useState, useEffect} from 'react';
 import './Quiz.css';
+import {useNavigate} from "react-router-dom";
 
-export const Quiz = ({ questions }) => {
+export const Quiz = ({ questions, title }) => {
     const [answers, setAnswers] = useState({});
     const [results, setResults] = useState({});
     const [showCorrectAnswer, setShowCorrectAnswer] = useState({});
@@ -9,6 +10,7 @@ export const Quiz = ({ questions }) => {
     const [isSubmit, setIsSubmit] = useState(false);
     const [startTime, setStartTime] = useState(null);
     const [endTime, setEndTime] = useState(null);
+    const navigate = useNavigate();
 
     useEffect(() => {
         let interval;
@@ -65,8 +67,9 @@ export const Quiz = ({ questions }) => {
 
     return (
         <div className="container">
-            <h1>Квиз-тест</h1>
+            <h1>Квиз - {title}</h1>
             <div className="timer">
+                <button className="submit-btn" onClick={() => navigate(-1)}>Назад</button>
                 {!timerRunning && !endTime && (
                     <button className="submit-btn" onClick={handleStartTimer}>Запустить таймер</button>
                 )}
@@ -89,6 +92,7 @@ export const Quiz = ({ questions }) => {
                             >
                                 <label>
                                     <input
+                                        className="input"
                                         type="checkbox"
                                         name={`question-${question.id}`}
                                         value={option}
