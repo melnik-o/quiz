@@ -2,7 +2,7 @@ import {useState, useEffect} from 'react';
 import './Quiz.css';
 import {useNavigate} from "react-router-dom";
 
-export const Quiz = ({ questions, title }) => {
+export const Quiz = ({questions, title}) => {
     const [answers, setAnswers] = useState({});
     const [results, setResults] = useState({});
     const [showCorrectAnswer, setShowCorrectAnswer] = useState({});
@@ -67,15 +67,15 @@ export const Quiz = ({ questions, title }) => {
 
     return (
         <div className="container">
-            <h1>Квиз - {title}</h1>
+            <h1>Квіз - {title}</h1>
             <div className="timer">
                 <button className="submit-btn" onClick={() => navigate(-1)}>Назад</button>
                 {!timerRunning && !endTime && (
-                    <button className="submit-btn" onClick={handleStartTimer}>Запустить таймер</button>
+                    <button className="submit-btn" onClick={handleStartTimer}>Запустити таймер</button>
                 )}
                 {timerRunning && (
                     <div className="time">
-                        <p>Прошло времени: {formatTime(endTime - startTime)}</p>
+                        <p>Пройшло часу: {formatTime(endTime - startTime)}</p>
                     </div>
                 )}
             </div>
@@ -105,29 +105,28 @@ export const Quiz = ({ questions, title }) => {
                         ))}
                         {results[question.id] !== undefined && (
                             <p className={results[question.id] ? 'correct-answer' : 'incorrect-answer'}>
-                                {results[question.id] ? 'Правильно!' : 'Неправильно!'}
+                                {results[question.id] ? 'Вірно!' : 'Не вірно!'}
                                 {!results[question.id] && (
                                     <button className="submit-btn"
-                                            onClick={() => handleShowCorrectAnswer(question.id)}>Показать правильный
-                                        ответ</button>
+                                            onClick={() => handleShowCorrectAnswer(question.id)}>Вірна відповідь</button>
                                 )}
                             </p>
                         )}
                         {showCorrectAnswer[question.id] && (
                             <p className="correct-answer">
-                                Правильный ответ: <strong>{question.correctAnswers.join(', ')}</strong>
+                                Вірна відповідь: <strong>{question.correctAnswers.join(', ')}</strong>
                             </p>
                         )}
                         <hr/>
                     </div>
                 ))}
-                <button type="submit" className="submit-btn">Отправить</button>
+                <button type="submit" className="submit-btn">Відправити</button>
             </form>
             {isSubmit && (
                 <div className="statistics">
-                    <p>Правильных
-                        ответов: {Object.values(results).filter(result => result).length}/{questions.length}</p>
-                    <p>Время выполнения: {formatTime(endTime - startTime)}</p>
+                    <p>Вірних
+                        відповідей: {Object.values(results).filter(result => result).length}/{questions.length}</p>
+                    <p>Час виконання: {formatTime(endTime - startTime)}</p>
                 </div>
             )}
         </div>
