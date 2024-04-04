@@ -5,6 +5,7 @@ import {questionsCryptoLaw} from "./data/questionsCryptoLaw.js";
 import {questionsUIB} from "./data/questionsUIB.js";
 import QuizTerms from "./components/questionnaire/QuizTerms.jsx";
 import {questionsTerms} from "./data/questionsTerms.js";
+import {questionsKSZI} from "./data/questionsKSZI.js";
 
 export const router = createBrowserRouter([
     {
@@ -18,6 +19,10 @@ export const router = createBrowserRouter([
     {
         path: '/quiz/uib',
         element: <Quiz title="управління інформаційною безпекою" questions={questionsUIB}/>,
+    },
+    {
+        path: '/quiz/kszi',
+        element: <Quiz title="КСЗІ" questions={questionsKSZI}/>
     },
     {
         path: '/quiz/terms',
