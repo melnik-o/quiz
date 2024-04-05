@@ -11,18 +11,23 @@ export const Main = () => {
                     </NavLink>
                 </div>
                 <div className={classes.button}>
+                    <NavLink to="/quiz/crypto">
+                        2. Крипта №2
+                    </NavLink>
+                </div>
+                <div className={classes.button}>
                     <NavLink to="/quiz/uib">
-                        2. УІБ
+                        3. УІБ
                     </NavLink>
                 </div>
                 <div className={classes.button}>
                     <NavLink to="/quiz/kszi">
-                        3. КСЗІ
+                        4. КСЗІ
                     </NavLink>
                 </div>
                 <div className={classes.button}>
                     <NavLink to="/quiz/tg">
-                        4. Тести Телеграмм
+                        5. Тести Телеграмм
                     </NavLink>
                 </div>
             </div>

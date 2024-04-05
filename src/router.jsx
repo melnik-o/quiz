@@ -7,6 +7,7 @@ import QuizTerms from "./components/questionnaire/QuizTerms.jsx";
 import {questionsTerms} from "./data/questionsTerms.js";
 import {questionsKSZI} from "./data/questionsKSZI.js";
 import {questionsTG} from "./data/questionsTG.js";
+import {questionsCrypto} from "./data/questionsCrypto.js";
 
 export const router = createBrowserRouter([
     {
@@ -15,7 +16,11 @@ export const router = createBrowserRouter([
     },
     {
         path: '/quiz/crypto-and-law',
-        element: <Quiz title="крипта та закони" questions={questionsCryptoLaw}/>,
+        element: <Quiz title="криптографія та закони" questions={questionsCryptoLaw}/>,
+    },
+    {
+        path: '/quiz/crypto',
+        element: <Quiz title="криптографія" questions={questionsCrypto}/>,
     },
     {
         path: '/quiz/uib',
