@@ -6,6 +6,7 @@ import {questionsUIB} from "./data/questionsUIB.js";
 import QuizTerms from "./components/questionnaire/QuizTerms.jsx";
 import {questionsTerms} from "./data/questionsTerms.js";
 import {questionsKSZI} from "./data/questionsKSZI.js";
+import {questionsTG} from "./data/questionsTG.js";
 
 export const router = createBrowserRouter([
     {
@@ -23,6 +24,10 @@ export const router = createBrowserRouter([
     {
         path: '/quiz/kszi',
         element: <Quiz title="КСЗІ" questions={questionsKSZI}/>
+    },
+    {
+        path: '/quiz/tg',
+        element: <Quiz title="тести Телеграмм" questions={questionsTG}/>
     },
     {
         path: '/quiz/terms',
