@@ -30,12 +30,17 @@ export const Main = () => {
                         5. Тести Телеграмм
                     </NavLink>
                 </div>
+                <div className={classes.button}>
+                    <NavLink to="/quiz/tsoo">
+                        6. ТСОО
+                    </NavLink>
+                </div>
             </div>
             <h1>Тести на сумісність</h1>
             <div className={classes.list}>
                 <div className={classes.button}>
                     <NavLink to="/quiz/terms">
-                        1. Визначення
+                    1. Визначення
                     </NavLink>
                 </div>
             </div>
