@@ -35,6 +35,11 @@ export const Main = () => {
                         6. ТСОО
                     </NavLink>
                 </div>
+                <div className={classes.button}>
+                    <NavLink to="/quiz/examples">
+                        6. Тести Приклади
+                    </NavLink>
+                </div>
             </div>
             <h1>Тести на сумісність</h1>
             <div className={classes.list}>

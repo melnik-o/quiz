@@ -9,6 +9,7 @@ import {questionsKSZI} from "./data/questionsKSZI.js";
 import {questionsTG} from "./data/questionsTG.js";
 import {questionsCrypto} from "./data/questionsCrypto.js";
 import {questionsTSOO} from "./data/questionsTSOO.js";
+import {questionsExamples} from "./data/questionsExamples.js";
 
 export const router = createBrowserRouter([
     {
@@ -38,6 +39,10 @@ export const router = createBrowserRouter([
     {
         path: '/quiz/tg',
         element: <Quiz title="тести Телеграмм" questions={questionsTG}/>
+    },
+    {
+        path: '/quiz/examples',
+        element: <Quiz title="тести Приклади" questions={questionsExamples}/>
     },
     {
         path: '/quiz/terms',
