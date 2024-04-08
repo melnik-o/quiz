@@ -10,6 +10,7 @@ import {questionsTG} from "./data/questionsTG.js";
 import {questionsCrypto} from "./data/questionsCrypto.js";
 import {questionsTSOO} from "./data/questionsTSOO.js";
 import {questionsExamples} from "./data/questionsExamples.js";
+import {questionsPartTwo} from "./data/questionsPartTwo.js";
 
 export const router = createBrowserRouter([
     {
@@ -43,6 +44,10 @@ export const router = createBrowserRouter([
     {
         path: '/quiz/examples',
         element: <Quiz title="тести Приклади" questions={questionsExamples}/>
+    },
+    {
+        path: '/quiz/part-two',
+        element: <Quiz title="тести Питання розділ №2" questions={questionsPartTwo}/>
     },
     {
         path: '/quiz/terms',

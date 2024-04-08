@@ -37,7 +37,12 @@ export const Main = () => {
                 </div>
                 <div className={classes.button}>
                     <NavLink to="/quiz/examples">
-                        6. Тести Приклади
+                        7. Тести Приклади
+                    </NavLink>
+                </div>
+                <div className={classes.button}>
+                    <NavLink to="/quiz/part-two">
+                        8. Питання розділ 2
                     </NavLink>
                 </div>
             </div>
