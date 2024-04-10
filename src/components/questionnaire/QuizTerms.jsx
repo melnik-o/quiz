@@ -38,7 +38,7 @@ const QuizTerms = ({ questions, title }) => {
     return (
         <div className="container">
             <h1>{title}</h1>
-            <button className="submit-btn" onClick={() => navigate(-1)}>Назад</button>
+            <button className="submit-btn" onClick={() => navigate("/")}>Назад</button>
             <div className="quiz-form">
                 {questions.map((questionObj, index) => (
                     <div className="question" key={index}>

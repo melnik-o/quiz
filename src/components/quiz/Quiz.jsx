@@ -69,7 +69,7 @@ export const Quiz = ({questions, title}) => {
         <div className="container">
             <h1>Квіз - {title}</h1>
             <div className="timer">
-                <button className="submit-btn" onClick={() => navigate(-1)}>Назад</button>
+                <button className="submit-btn" onClick={() => navigate("/")}>Назад</button>
                 {!timerRunning && !endTime && (
                     <button className="submit-btn" onClick={handleStartTimer}>Запустити таймер</button>
                 )}

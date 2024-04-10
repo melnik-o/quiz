@@ -45,6 +45,11 @@ export const Main = () => {
                         8. Питання розділ 2
                     </NavLink>
                 </div>
+                <div className={classes.button}>
+                    <NavLink to="/quiz/efi">
+                        9. ІФЕ
+                    </NavLink>
+                </div>
             </div>
             <h1>Тести на сумісність</h1>
             <div className={classes.list}>
