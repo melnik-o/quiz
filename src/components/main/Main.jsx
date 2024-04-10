@@ -47,7 +47,7 @@ export const Main = () => {
                 </div>
                 <div className={classes.button}>
                     <NavLink to="/quiz/efi">
-                        9. ІФЕ
+                        9. ЕФІ
                     </NavLink>
                 </div>
             </div>
