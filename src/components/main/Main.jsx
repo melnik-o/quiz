@@ -50,6 +50,11 @@ export const Main = () => {
                         9. ЕФІ
                     </NavLink>
                 </div>
+                <div className={classes.button}>
+                    <NavLink to="/quiz/edki">
+                        10. ЄДКІ
+                    </NavLink>
+                </div>
             </div>
             <h1>Тести на сумісність</h1>
             <div className={classes.list}>

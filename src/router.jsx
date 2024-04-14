@@ -12,6 +12,7 @@ import {questionsTSOO} from "./data/questionsTSOO.js";
 import {questionsExamples} from "./data/questionsExamples.js";
 import {questionsPartTwo} from "./data/questionsPartTwo.js";
 import {questionsEFI} from "./data/questionsEFI.js";
+import {questionsEDKI} from "./data/questionsEDKI.js";
 
 export const router = createBrowserRouter([
     {
@@ -53,6 +54,10 @@ export const router = createBrowserRouter([
     {
         path: '/quiz/efi',
         element: <Quiz title="ЕФІ" questions={questionsEFI}/>
+    },
+    {
+        path: '/quiz/edki',
+        element: <Quiz title="ЄДКІ" questions={questionsEDKI}/>
     },
     {
         path: '/quiz/terms',
