@@ -1151,7 +1151,12 @@ export const questionsEDKI = [
     },
     {
         id: 96,
-        question: 'Яка з наведених в списку схем шифрування використовує криптографію з публічним ключем?',
+        question: 'Яка з наведених в списку схем шифрування використовує криптографію з публічним ключем?\n ' +
+            '1. Data Encryption Standard (DES)\n' +
+            '2. International Data Encryption Algorithm (IDEA)\n' +
+            '3. RSA\n' +
+            '4. Diffie-Hellman\n' +
+            '5. Digital Signature Standard (DSS)\n',
         options: [
             'лише 1 і 2;',
             'лише 2 і 3;',
