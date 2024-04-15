@@ -82,7 +82,7 @@ export const Quiz = ({questions, title}) => {
             <form className="quiz-form" onSubmit={handleSubmit}>
                 {questions.map((question) => (
                     <div key={question.id} className="question">
-                        <h3>{question.id}. {question.question}</h3>
+                        <h3>{question.id}. {question.question} {question.correctAnswers.length > 1 && '(*)'}</h3>
                         {question.options.map((option) => (
                             <div
                                 key={option}
