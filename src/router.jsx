@@ -13,6 +13,7 @@ import {questionsExamples} from "./data/questionsExamples.js";
 import {questionsPartTwo} from "./data/questionsPartTwo.js";
 import {questionsEFI} from "./data/questionsEFI.js";
 import {questionsEDKI} from "./data/questionsEDKI.js";
+import {questionsOSMsDos} from "./data/questionsOSMsDos.js";
 
 export const router = createBrowserRouter([
     {
@@ -58,6 +59,10 @@ export const router = createBrowserRouter([
     {
         path: '/quiz/edki',
         element: <Quiz title="ЄДКІ" questions={questionsEDKI}/>
+    },
+    {
+        path: '/quiz/os-msdos',
+        element: <Quiz title="Операційна система MS DOS" questions={questionsOSMsDos}/>
     },
     {
         path: '/quiz/terms',

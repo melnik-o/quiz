@@ -55,6 +55,11 @@ export const Main = () => {
                         10. ЄДКІ
                     </NavLink>
                 </div>
+                <div className={classes.button}>
+                    <NavLink to="/quiz/os-msdos">
+                        11. ОС MS DOS
+                    </NavLink>
+                </div>
             </div>
             <h1>Тести на сумісність</h1>
             <div className={classes.list}>
