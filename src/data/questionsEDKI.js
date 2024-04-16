@@ -75,7 +75,7 @@ export const questionsEDKI = [
             'витирає записи про хости з агр-таблиці;',
             'правильної відповіді тут немає.'
         ],
-        correctAnswers: ['показує біжучі значення агр-таблиці;']
+        correctAnswers: ['додає запис про хост до агр-таблиці;']
     },
     {
         id: 9,
@@ -159,7 +159,7 @@ export const questionsEDKI = [
             'М;',
             ']log2M[.'
         ],
-        correctAnswers: ['log2M+1;']
+        correctAnswers: [']log2M[+1;']
     },
     {
         id: 16,
@@ -195,7 +195,7 @@ export const questionsEDKI = [
             '32',
             'n'
         ],
-        correctAnswers: ['2^n-1']
+        correctAnswers: ['(2-2^(-23)) 2^126']
     },
     {
         id: 19,
