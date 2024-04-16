@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import {useNavigate} from "react-router-dom";
 
-const QuizTerms = ({ questions, title }) => {
+export const QuizTerms = ({ questions, title }) => {
     const navigate = useNavigate();
     const [selectedAnswers, setSelectedAnswers] = useState(Array(questions.length).fill(''));
     const [totalAnswers, setTotalAnswers] = useState(0);
@@ -87,5 +87,3 @@ const QuizTerms = ({ questions, title }) => {
         </div>
     );
 };
-
-export default QuizTerms;

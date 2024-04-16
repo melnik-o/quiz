@@ -1,10 +1,16 @@
 import {NavLink} from "react-router-dom";
 import classes from './Main.module.css';
 export const Main = () => {
+
     return (
         <>
             <h1>Тести-Квізи</h1>
             <div className={classes.list}>
+                <div className={classes.button} style={{ backgroundColor: 'green' }}>
+                    <NavLink to="/quiz/random-questions">
+                        Випадкові питання
+                    </NavLink>
+                </div>
                 <div className={classes.button}>
                     <NavLink to="/quiz/crypto-and-law">
                         1. Крипта та закони
@@ -70,7 +76,7 @@ export const Main = () => {
             <div className={classes.list}>
                 <div className={classes.button}>
                     <NavLink to="/quiz/terms">
-                    1. Визначення
+                        1. Визначення
                     </NavLink>
                 </div>
             </div>

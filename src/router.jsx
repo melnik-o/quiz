@@ -1,25 +1,35 @@
 import {createBrowserRouter} from "react-router-dom";
+
 import {Main} from "./components/main/Main.jsx";
 import {Quiz} from "./components/quiz/Quiz.jsx";
-import {questionsCryptoLaw} from "./data/questionsCryptoLaw.js";
-import {questionsUIB} from "./data/questionsUIB.js";
-import QuizTerms from "./components/questionnaire/QuizTerms.jsx";
-import {questionsTerms} from "./data/questionsTerms.js";
-import {questionsKSZI} from "./data/questionsKSZI.js";
-import {questionsTG} from "./data/questionsTG.js";
-import {questionsCrypto} from "./data/questionsCrypto.js";
-import {questionsTSOO} from "./data/questionsTSOO.js";
-import {questionsExamples} from "./data/questionsExamples.js";
-import {questionsPartTwo} from "./data/questionsPartTwo.js";
-import {questionsEFI} from "./data/questionsEFI.js";
-import {questionsEDKI} from "./data/questionsEDKI.js";
-import {questionsOSMsDos} from "./data/questionsOSMsDos.js";
-import {questionsEDKI_OKM} from "./data/questionsEDKI_OKM.js";
+import {QuizTerms} from "./components/quiz-terms/QuizTerms.jsx";
+import {RandomQuestions} from "./components/random-questions/RandomQuestions.jsx";
+
+import {
+    questionsAll,
+    questionsCrypto,
+    questionsCryptoLaw,
+    questionsEDKI,
+    questionsEDKI_OKM,
+    questionsEFI,
+    questionsExamples,
+    questionsKSZI,
+    questionsOSMsDos,
+    questionsPartTwo,
+    questionsTerms,
+    questionsTG,
+    questionsTSOO,
+    questionsUIB
+} from './data/index.js'
 
 export const router = createBrowserRouter([
     {
         path: '/',
         element: <Main/>,
+    },
+    {
+        path: '/quiz/random-questions',
+        element: <RandomQuestions questions={questionsAll}/>
     },
     {
         path: '/quiz/crypto-and-law',
