@@ -23,6 +23,5 @@ export const questionsAll = [
     ...questionsPartTwo,
     ...questionsTG,
     ...questionsTSOO,
-    ...questionsTSOO,
     ...questionsUIB,
 ];
