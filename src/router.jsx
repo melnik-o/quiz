@@ -14,6 +14,7 @@ import {questionsPartTwo} from "./data/questionsPartTwo.js";
 import {questionsEFI} from "./data/questionsEFI.js";
 import {questionsEDKI} from "./data/questionsEDKI.js";
 import {questionsOSMsDos} from "./data/questionsOSMsDos.js";
+import {questionsEDKI_OKM} from "./data/questionsEDKI_OKM.js";
 
 export const router = createBrowserRouter([
     {
@@ -59,6 +60,10 @@ export const router = createBrowserRouter([
     {
         path: '/quiz/edki',
         element: <Quiz title="ЄДКІ" questions={questionsEDKI}/>
+    },
+    {
+        path: '/quiz/edki-okm',
+        element: <Quiz title="ЄДКІ OKM" questions={questionsEDKI_OKM}/>
     },
     {
         path: '/quiz/os-msdos',

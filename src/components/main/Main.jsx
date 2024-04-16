@@ -56,8 +56,13 @@ export const Main = () => {
                     </NavLink>
                 </div>
                 <div className={classes.button}>
+                    <NavLink to="/quiz/edki-okm">
+                        11. ЄДКІ OKM
+                    </NavLink>
+                </div>
+                <div className={classes.button}>
                     <NavLink to="/quiz/os-msdos">
-                        11. ОС MS DOS
+                        12. ОС MS DOS
                     </NavLink>
                 </div>
             </div>
